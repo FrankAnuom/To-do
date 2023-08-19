@@ -1,8 +1,14 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+const inputField = document.getElementById('input-box'); // Replace 'todoInput' with your actual input field's ID
+
+
+
+
 function addTask(){
-    if(inputBox.value === ''){
+   
+    if(inputBox.value.trim() === ''){
         alert("Ejeh write something!");
     }
     else{
