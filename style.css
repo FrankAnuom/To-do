@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0000FF, orangered);
+    padding: 10px;
+}
+/*THIS PART CONTROLS THE white BACKGROUND */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40PX 30PX 70PX;
+    border-radius: 10px;
+}
+
+/*THIS PART CONTROLS THE 'To Do List */
+.todo-app h2{
+color: #0000FF;
+display: flex;
+align-items: center;
+margin: 20px;
+}
+
+/*THIS PART CONTROLS THE icon with pencil close to to do list */
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: orangered;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/*THIS PART CONTROLS THE INPUT FIELD*/
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+/*THIS PART CONTROLS THE ADD BUTTON*/
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 200px;
+}
+/*THIS PART CONTROLS THE PLACEHOLDER TEXT*/
+::placeholder {
+    color: white; 
+    font-style: oblique; 
+  }
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+   
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+  }
+  ul li.checked{
+    color: #0000FF;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url(checked.png);
+
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: orangered;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+  }
+  ul li span:hover{
+background: wheat;
+
+  }
+  .logo-container {
+    position: relative;
+    width: 70%;
+    height: 70%; 
+  }
+  
+  .logo {
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    border-radius: 50%;
+  }
+  
